@@ -1,5 +1,4 @@
-
-
+from grafico import gui 
 
 
 class Logic:
@@ -26,9 +25,19 @@ class Logic:
         return 0 
 
 class Player:
-    def __init__(self, imagen, nombre = "player 1"):
+    def __init__(self, imagen, nombre ):
         self.imagen = imagen
         self.victorias = 0
         self.nombre = nombre
 
     
+if __name__ == "__main__":
+    ico = []
+    primer = 1
+    raiz, ico  = gui.inicio()
+    players = []
+    if primer:
+        
+        gui.selcion_icon(players)
+
+    gui.fin(raiz)
